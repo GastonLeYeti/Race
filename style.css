@@ -1,0 +1,86 @@
+body {
+  text-align: center;
+}
+.racer-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: -webkit-fill-available;
+}
+.racer-table td {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+}
+tr#player1-race td:last-child, tr#player2-race td:last-child{
+  background-image: url("images/finish.png");
+  background-size: contain;
+}
+.racer-table td.active {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: contain;
+  background-position:center;
+}
+#player1-race td.active {
+  background-image: url("images/player_1.png");
+}
+#player2-race td.active {
+  background-image: url("images/player_2.png");
+}
+
+/*** custom CSS ***/
+
+.trees td {
+  background-image: url("images/tree_1.png");
+  background-size: contain;
+}
+#feu-tricolor {
+  left: auto;
+  text-align: center;
+  display: inline;
+}
+
+#feu-tricolor div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 5px;
+  display: inline-block;
+  background-color: #2c2c2ca0;
+  border: 3px inset black;
+}
+
+#feu-tricolor div.red {
+  background-color: rgb(145, 19, 19);
+}
+
+#feu-tricolor div.green {
+  background-color: rgb(93, 151, 12);
+}
+
+#scorePlayers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+#scorePlayers > div {
+  margin: 0 40px;
+}
+#scorePlayers img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+#scorePlayers span {
+  font-size: 20px;
+  font-weight: bold;
+}
+#scorePlayers .touche {
+  background-color: rgb(141, 141, 141);
+  display: block;
+  color: black;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
